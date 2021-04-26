@@ -5,7 +5,9 @@
 
 #giocatore,
 #computer,
-#vincitore {
+#vincitore,
+#giocate,
+#pareggio {
   height: 200px;
   text-align: center;
   border-radius: 20px;

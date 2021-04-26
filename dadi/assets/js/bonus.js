@@ -27,4 +27,19 @@ for (var i = 0; i < numeroGiocate; i++){
 }
 //console.log(nGiocatore, nComputer, nPareggio);
 
+document.getElementById("giocate").innerHTML = "Il numero di giocate che hai scelto è " + numeroGiocate;
+document.getElementById("giocatore").innerHTML = "Il giocatore ha vinto " + nGiocatore + " volte!";
+document.getElementById("computer").innerHTML = "Il computer ha vinto " + nComputer + " volte!";
+document.getElementById("pareggio").innerHTML = "Ci sono stati " + nPareggio + " pareggi!";
 
+switch (true) {
+    case nGiocatore > nComputer:
+        document.getElementById("vincitore").innerHTML = "Il giocatore ha vinto più volte del computer!";
+        break;
+    case nGiocatore < nComputer:
+        document.getElementById("vincitore").innerHTML = "Il computer ha vinto più volte del giocatore!";
+        break;
+    default:
+        document.getElementById("vincitore").innerHTML = "Il giocatore ha vinto tante volte quante il computer!";
+        break;
+}
