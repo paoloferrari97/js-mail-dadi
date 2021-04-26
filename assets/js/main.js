@@ -1,5 +1,8 @@
 //Chiedi all’utente la sua email
-var email = prompt("Inserisci qua la tua email!");
+var email = "";
+while (email == "") {
+    email = prompt("Inserisci qua la tua email!");
+}   
 document.getElementById("email").innerHTML = "La tua email è " + email;
 //controlla che sia nella lista di chi può accedere
 var stampaLista = "Lista email che possono accedere:";
